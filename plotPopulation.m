@@ -15,7 +15,6 @@ function plotPopulation
     subplot(2,1,1);
     plot(T,prey,'g',T,pred,'y');
     axis([0,1,0,1.5]);
-    whitebg('black');
     grid on;
     grid minor;
     legend('prey','predator');
@@ -34,4 +33,6 @@ function plotPopulation
     set(gca,'YTickLabel',[]);
     set(gca,'XTickLabel',[]);
     title('Prey population as a function of predator population');
+    
+    whitebg('black');
 end
