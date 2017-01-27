@@ -12,6 +12,7 @@ function plotPopulation
         prey(k + 1) = prey(k) + (a*prey(k) - b*prey(k)*pred(k))*dt; 
         pred(k + 1) = pred(k) + (c*prey(k)*pred(k) - d*pred(k))*dt; 
     end
+    figure;
     subplot(2,1,1);
     plot(T,prey,'g',T,pred,'y');
     axis([0,1,0,1.5]);
